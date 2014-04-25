@@ -1,52 +1,43 @@
 module.exports = (robot) ->
-  robot.hear /だよね$/i, (msg) ->
-    msg.send "そうとは言い切れないね"
-
-  robot.hear /ねむい|眠い|ネムイ|つかれた|疲れた/i, (msg) ->
-    words = ["寝ろ", "なんで寝ないの？", "人間がんばればまだいける"]
-    msg.send msg.random words
-  
-  robot.hear /帰りたい/i, (msg) ->
-    words = ["とっとと帰れ", "帰ればいいのに"]
-    msg.send msg.random words
-  
-  robot.hear /pit/i, (msg) ->
-    words = ["何？またpit in？", "今日も明日もpit in", "あなたとpit。今すぐダウンロード",]
-    msg.send msg.random words
-
-  robot.hear /悲しい/i, (msg) ->
-    words = ["もっと悲しいことは世の中いっぱいある", "ふーん。で？"]
-    msg.send msg.random words
-
-  robot.hear /^はい$/i, (msg) ->
-    words = ["返事だけはいいんだね", "ほんとにわかってる？"]
-    msg.send msg.random words
-
-  robot.hear /おはよ/i, (msg) ->
-    words = [ "いまごろ？", "帰っていいよ"]
-    msg.send msg.random words
-
-  robot.hear /idobata-bot/i, (msg) ->
-    words = ["よんだ？", "気安く呼ばないでもらえますか"]
-    msg.send msg.random words
-
-  robot.hear /？$/i, (msg) ->
-    words = ["知らん", "そんなことも分からないの？", "お前は何を言っているんだ"]
-    msg.send msg.random words
-
-  robot.hear /二郎/i, (msg) ->
-    msg.send "アレは食べ物じゃない"
-
-  robot.hear /misawa/i, (msg) ->
+  # hear
+  robot.hear /ムリ|無理|つかれた|疲れた|死ぬ|/i, (msg) ->
     words = [
-      "http://jigokuno.img.jugem.jp/20090522_1213732.gif",
-      "http://jigokuno.img.jugem.jp/20090203_875727.gif",
-      "http://jigokuno.img.jugem.jp/20100218_1708335.gif",
-      "http://jigokuno.img.jugem.jp/20110215_2060227.gif",
-      "http://img.jigokuno.com/20120525_2481688.gif",
-      "http://jigokuno.img.jugem.jp/20111024_2296936.gif"
+      "そんなこと言わないで！あ、あなたには……その……わ、私がいるじゃない///"
+      "これ、あんたにあげる。ずっと欲しいって言ってたでしょ。:sushi:"
+      "ったく…しょうがないわね！"
+      "あんたなんか豆腐の角で頭ぶつけて死んじゃえばいいのよ！"
+      "そんなこと言わないでよ……心配…するじゃない…"
     ]
     msg.send msg.random words
 
-  robot.hear /飯|腹減|寿司|食う|食べ/i, (msg) ->
-    msg.send ":sushi:"
+  robot.hear /帰りたい/i, (msg) ->
+    words = [
+      "ほら、あと3分待ってあげるからとっとと支度しなさい！"
+      "き、奇遇ね、わ、私も今ちょうど帰ろうと思ってたとこよ"
+    ]
+    msg.send msg.random words
+
+  # respond
+  robot.respond /^嫌い？$/i, (msg) ->
+    words = [
+      "別に嫌いじゃないわよ"
+      "だいっきらい！"
+      "嫌いだったら……相手になんかしてなんかしてないわよ"
+    ]
+    msg.send msg.random words
+
+  robot.respond /^好き？$/i, (msg) ->
+    words = [
+      "べっ別に、あんたのことがすきなんかじゃないからね！"
+      "…は？す、好きなんて言ってないじゃない!ち、調子に乗らないでよね、バカ!"
+      "てっ、照れてないもんっ。"
+      "べべべべべ、べつに嬉しくなんかないからね！"
+    ]
+    msg.send msg.random words
+
+  robot.respond /^好き$/i, (msg) ->
+    words = [
+      "てっ、照れてないもんっ。"
+      "べべべべべ、べつに嬉しくなんかないからね！"
+    ]
+    msg.send msg.random words
