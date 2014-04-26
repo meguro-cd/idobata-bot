@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/meguro-cd/idobata-bot.svg?branch=master)](https://travis-ci.org/meguro-cd/idobata-bot)
+
 ### Testing Hubot Locally
 
 You can test your hubot by running the following.
