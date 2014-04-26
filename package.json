@@ -1,24 +1,23 @@
 {
-  "name": "hosted-hubot",
-  "version": "2.7.1",
+  "name": "idobata-bot",
+  "version": "0.0.1",
   "private": true,
-  "author": "GitHub Inc.",
+  "author": "meguro-cd",
   "keywords": [
-    "github",
+    "idobata",
     "hubot",
-    "campfire",
     "bot"
   ],
-  "description": "A simple helpful robot for your Company",
+  "description": ":sushi:",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/github/hubot/raw/master/LICENSE"
+      "url": "https://github.com/meguro-cd/idobata-bot/LICENSE"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/github/hubot.git"
+    "url": "https://github.com/meguro-cd/idobata-bot.git"
   },
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
