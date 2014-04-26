@@ -18,7 +18,7 @@ module.exports = (robot) ->
     msg.send msg.random words
 
   # respond
-  robot.respond /^嫌い？$/i, (msg) ->
+  robot.respond /嫌い？$/i, (msg) ->
     words = [
       "別に嫌いじゃないわよ"
       "だいっきらい！"
@@ -26,7 +26,7 @@ module.exports = (robot) ->
     ]
     msg.send msg.random words
 
-  robot.respond /^好き？$/i, (msg) ->
+  robot.respond /好き？$/i, (msg) ->
     words = [
       "べっ別に、あんたのことがすきなんかじゃないからね！"
       "…は？す、好きなんて言ってないじゃない!ち、調子に乗らないでよね、バカ!"
@@ -35,7 +35,7 @@ module.exports = (robot) ->
     ]
     msg.send msg.random words
 
-  robot.respond /^好き$/i, (msg) ->
+  robot.respond /好き$/i, (msg) ->
     words = [
       "てっ、照れてないもんっ。"
       "べべべべべ、べつに嬉しくなんかないからね！"
