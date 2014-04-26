@@ -1,0 +1,7 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: FgSVdV0+dVnFpPLfe9XCuJZimk0sYJv6KPemQ0hS5GS1/kBbtSaq7hGl8B/1Hj/Epv/pOyJTJsrylc/1jr0PT0vzkYwZ5LL7s29lOnzQibIXcv74kodb2hEVNYqy1PK5ne7jn2seJQAjfEu+guW5kRoajTNU5LPj+51bXkmt9yA=
+  app: thawing-chamber-5618
+  on:
+    repo: meguro-cd/idobata-bot
