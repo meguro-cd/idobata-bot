@@ -17,6 +17,20 @@ module.exports = (robot) ->
     ]
     msg.send msg.random words
 
+  robot.hear /行きたい/i, (msg) ->
+    words = [
+      "一緒に行きたいって言うなら…付き合ってあげなくもないわ。"
+      "あんたなんかに付き合ってあげる物好き、私くらいしかいないんだからね！"
+      ""
+    ]
+    msg.send msg.random words
+  
+  robot.hear /ただいま/i, (msg) ->
+    words = [
+      "寂しくなんてなかったんだから！別に少しの間会わなくたって平気だし！"
+    ]
+    msg.send msg.random words
+
   # respond
   robot.respond /嫌い？$/i, (msg) ->
     words = [
@@ -39,5 +53,8 @@ module.exports = (robot) ->
     words = [
       "てっ、照れてないもんっ。"
       "べべべべべ、べつに嬉しくなんかないからね！"
+      "私も実は…や、やっぱなんでもないわ！！//"
+      "何よ！好きで悪い！？"
+      "あんたは、私のことだけ見てればいいのよッ。だから…、その…、私もあんたのことだけ見てるからッ… 。"
     ]
     msg.send msg.random words
