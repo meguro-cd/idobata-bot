@@ -1,7 +1,11 @@
 language: node_js
 node_js:
   - "0.10"
-
+  
+notifications:
+  webhooks:
+    - https://idobata.io/hook/a86d131f-6aad-4c37-bb56-efdd67d0e3d9
+    
 deploy:
   provider: heroku
   api_key:
