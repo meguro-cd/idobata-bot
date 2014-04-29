@@ -47,6 +47,10 @@ module.exports = (robot) ->
   robot.hear /おはよー/i, (msg) ->
     msg.send "おはよーじゃなくて、おはようございますでしょっ"
 
+  robot.hear /かえる|帰る/i, (msg) ->
+    msg.send "はぁはぁはぁ…。き、奇遇ね、わ、私も今ちょうど帰るとこなんだけど、ぜぇぜぇ。"
+
+
   # respond
   robot.respond /嫌い？$/i, (msg) ->
     words = [
@@ -87,3 +91,10 @@ module.exports = (robot) ->
       "ふ、二人しかいない時なら…って調子に乗るなーっ"
       "しょうがないわね。ほら、一分だけよ？"
     ]
+  
+  robot.respond /おやすみ/i, (msg) ->
+    msg.send msg.random [
+      "私も眠くなってきたわ・・・。 (つ∀-)ｵﾔｽﾐｰ"
+      "まだ仕事残ってるんじゃないの？ しょうがないから終わるまで付き合ってあげるわ… 居眠りなんてさせないんだから///"
+    ]
+
