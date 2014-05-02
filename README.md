@@ -6,7 +6,7 @@ You can test your hubot by running the following.
 
 ```
 export HUBOT_IDOBATA_API_TOKEN=<token>
-export HUBOT_NAME=<boname>
+export HUBOT_NAME=<botname>
 bin/hubot -a idobata
 ```
 
