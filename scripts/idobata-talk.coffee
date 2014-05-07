@@ -87,7 +87,7 @@ module.exports = (robot) ->
       "うるさい！ニヤついてなんか無い！死ね！この変態！クズ！"
     ]
 
-  robot.respond /癒して|いやして/i, (msg) ->
+  robot.respond /癒して|癒やして|いやして/i, (msg) ->
     msg.send msg.random [
       "ふ、二人しかいない時なら…って調子に乗るなーっ"
       "しょうがないわね。ほら、一分だけよ？"
