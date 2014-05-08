@@ -51,7 +51,11 @@ module.exports = (robot) ->
     msg.send "はぁはぁはぁ…。き、奇遇ね、わ、私も今ちょうど帰るとこなんだけど、ぜぇぜぇ。"
 
   robot.hear /:frog/i, (msg) ->
-    msg.send "ぴょんぴょん"
+    msg.send msg.random [
+      "ぴょんぴょん"
+      "…大変ね"
+      "西に向かって懺悔してからissueを閉じなさいっ！"
+    ]
   # respond
   robot.respond /嫌い？$/i, (msg) ->
     words = [
