@@ -56,6 +56,10 @@ module.exports = (robot) ->
       "…大変ね"
       "西に向かって懺悔してからissueを閉じなさいっ！"
     ]
+  
+  robot.hear /ごめん|すみません/i, (msg) ->
+    msg.send "分かればいいのよ"
+    
   # respond
   robot.respond /嫌い？$/i, (msg) ->
     words = [
