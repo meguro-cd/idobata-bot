@@ -64,7 +64,7 @@ module.exports = (robot) ->
     msg.send "分かればいいのよ"
   
   robot.hear /:ant/i, (msg) ->
-    msg.send Array(Math.floor(Math.random() * 100) + 1).join ':ant:'
+    msg.send Array(Math.floor(Math.random() * 100) + 1).join ' :ant: '
     
   # respond
   robot.respond /嫌い？$/i, (msg) ->
