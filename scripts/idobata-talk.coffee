@@ -47,9 +47,12 @@ module.exports = (robot) ->
   robot.hear /おはよー/i, (msg) ->
     msg.send "おはよーじゃなくて、おはようございますでしょっ"
 
-  robot.hear /かえる|帰る/i, (msg) ->
-    msg.send "はぁはぁはぁ…。き、奇遇ね、わ、私も今ちょうど帰るとこなんだけど、ぜぇぜぇ。"
-
+  robot.hear /かえる|帰る|かえります|帰ります/i, (msg) ->
+    msg.send msg.random [
+      "はぁはぁはぁ…。き、奇遇ね、わ、私も今ちょうど帰るとこなんだけど、ぜぇぜぇ。"
+      "はやく帰るわよ…手、繋ぎなさいよ。"
+    ]
+    
   robot.hear /:frog/i, (msg) ->
     msg.send msg.random [
       "ぴょんぴょん"
