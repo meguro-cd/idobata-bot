@@ -53,7 +53,7 @@ module.exports = (robot) ->
       "はやく帰るわよ…手、繋ぎなさいよ。"
     ]
     
-  robot.hear /:frog/i, (msg) ->
+  robot.hear /:frog:/i, (msg) ->
     msg.send msg.random [
       "ぴょんぴょん"
       "…大変ね"
