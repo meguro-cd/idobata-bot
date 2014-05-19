@@ -61,7 +61,10 @@ module.exports = (robot) ->
     ]
   
   robot.hear /ごめん|すみません/i, (msg) ->
-    msg.send "分かればいいのよ"
+    msg.send msg.random [
+      "分かればいいのよ"
+      "謝るのだけはうまいのね"
+    ]
   
   robot.hear /:ant:/i, (msg) ->
     msg.send Array(Math.floor(Math.random() * 100) + 1).join ' :ant: '
