@@ -115,3 +115,20 @@ module.exports = (robot) ->
       "私も眠くなってきたわ・・・。 (つ∀-)ｵﾔｽﾐｰ"
       "まだ仕事残ってるんじゃないの？ しょうがないから終わるまで付き合ってあげるわ… 居眠りなんてさせないんだから///"
     ]
+
+  # time event with talk
+  robot.hear /(.*)/i, (msg) ->
+    date = new Date()
+    day  = date.getDay()
+    hour = date.getHours()
+    # deep night 
+    if hour > 22 || hour < 3
+      if robot.brain.data["event_night"] != day
+        robot.brain.data["event_night"] = day
+        msg.send msg.random [
+          "もう夜遅いわよ・・・。体に悪いから早く寝なさい・・・。"
+          "夜遅くまでお疲れ様。でも無理はしちゃダメよ。"
+        ]
+    robot.brain.save()
+
+
