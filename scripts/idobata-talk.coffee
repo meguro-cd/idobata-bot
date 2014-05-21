@@ -122,7 +122,7 @@ module.exports = (robot) ->
     day  = date.getDay()
     hour = date.getHours()
     # deep night 
-    if hour > 22 || hour < 3
+    if (22 < hour < 24) || (0 <= hour < 3)
       if robot.brain.data["event_night"] != day
         robot.brain.data["event_night"] = day
         msg.send msg.random [
