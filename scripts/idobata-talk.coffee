@@ -99,7 +99,7 @@ module.exports = (robot) ->
     ]
     msg.send msg.random words
 
-  robot.repond /大好き$/i, (msg) ->
+  robot.respond /大好き$/i, (msg) ->
     words = [
       "アホなの？"
       "なんなの？バカなの？死ぬの？"
