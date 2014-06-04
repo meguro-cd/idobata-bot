@@ -9,7 +9,9 @@ module.exports = (robot) ->
       "そんなこと言わないでよ……心配…するじゃない…"
     ]
     msg.send msg.random words
-
+  
+  
+  
   robot.hear /帰りたい/i, (msg) ->
     words = [
       "ほら、あと3分待ってあげるからとっとと支度しなさい！"
@@ -94,6 +96,14 @@ module.exports = (robot) ->
       "何よ！好きで悪い！？"
       "あんたは、私のことだけ見てればいいのよッ。だから…、その…、私もあんたのことだけ見てるからッ… 。"
       "うるさい！ニヤついてなんか無い！死ね！この変態！クズ！"
+    ]
+    msg.send msg.random words
+
+  robot.repond /大好き$/i, (msg) ->
+    words = [
+      "アホなの？"
+      "なんなの？バカなの？死ぬの？"
+      "私もよ…///"
     ]
     msg.send msg.random words
 
