@@ -9,9 +9,7 @@ module.exports = (robot) ->
       "そんなこと言わないでよ……心配…するじゃない…"
     ]
     msg.send msg.random words
-  
-  
-  
+
   robot.hear /帰りたい/i, (msg) ->
     words = [
       "ほら、あと3分待ってあげるからとっとと支度しなさい！"
@@ -27,7 +25,7 @@ module.exports = (robot) ->
       "どうしてもって言うなら一緒に言ってあげてもいいわよ？"
     ]
     msg.send msg.random words
-  
+
   robot.hear /ただいま/i, (msg) ->
     words = [
       "寂しくなんてなかったんだから！別に少しの間会わなくたって平気だし！"
@@ -54,23 +52,29 @@ module.exports = (robot) ->
       "はぁはぁはぁ…。き、奇遇ね、わ、私も今ちょうど帰るとこなんだけど、ぜぇぜぇ。"
       "はやく帰るわよ…手、繋ぎなさいよ。"
     ]
-    
+
   robot.hear /:frog:/i, (msg) ->
     msg.send msg.random [
       "ぴょんぴょん"
       "…大変ね"
       "西に向かって懺悔してからissueを閉じなさいっ！"
     ]
-  
+
   robot.hear /ごめん|すみません/i, (msg) ->
     msg.send msg.random [
       "分かればいいのよ"
       "謝るのだけはうまいのね"
     ]
-  
+
+  robot.hear /穴があったら入りたい|穴があったらはいりたい|あながあったら入りたい|あながあったらはいりたい/i, (msg) ->
+    msg.send msg.random [
+      "誰にだってミスはあるわよ"
+      "恥ずかしがってないでしゃきっとしなさいっ！"
+    ]
+
   robot.hear /:ant:/i, (msg) ->
     msg.send Array(Math.floor(Math.random() * 100) + 1).join ' :ant: '
-    
+
   # respond
   robot.respond /嫌い？$/i, (msg) ->
     words = [
@@ -119,7 +123,7 @@ module.exports = (robot) ->
       "ふ、二人しかいない時なら…って調子に乗るなーっ"
       "しょうがないわね。ほら、一分だけよ？"
     ]
-  
+
   robot.respond /おやすみ/i, (msg) ->
     msg.send msg.random [
       "私も眠くなってきたわ・・・。 (つ∀-)ｵﾔｽﾐｰ"
@@ -131,7 +135,7 @@ module.exports = (robot) ->
     date = new Date()
     day  = date.getDay()
     hour = date.getHours()
-    # deep night 
+    # deep night
     if (22 < hour < 24) || (0 <= hour < 3)
       if robot.brain.data["event_night"] != day
         robot.brain.data["event_night"] = day
@@ -140,5 +144,3 @@ module.exports = (robot) ->
           "夜遅くまでお疲れ様。でも無理はしちゃダメよ。"
         ]
     robot.brain.save()
-
-
