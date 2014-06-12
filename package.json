@@ -22,9 +22,9 @@
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-idobata": "0.0.3",
     "cron": "~1.0.4",
-    "coffee-script": "~1.7.1"
+    "coffee-script": "~1.7.1",
+    "hubot-hipchat": "~2.6.4-2"
   },
   "engines": {
     "node": ">= 0.8.x",
