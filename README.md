@@ -5,9 +5,9 @@
 You can test your hubot by running the following.
 
 ```
-export HUBOT_IDOBATA_API_TOKEN=<token>
-export HUBOT_NAME=<botname>
-bin/hubot -a idobata
+export HUBOT_HIPCHAT_JID=<your jid> 
+export HUBOT_HIPCHAT_PASSWORD=<your password>
+export HUBOT_HIPCHAT_ROOMS=<room>
+export HUBOT_HIPCHAT_TOKEN=<token>
+bin/hubot -a hipchat
 ```
-
-see [idobata/hubot-idobata](https://github.com/idobata/hubot-idobata)
