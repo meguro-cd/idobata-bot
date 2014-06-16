@@ -18,7 +18,7 @@ module.exports = (robot) ->
       return
     msg.http(url)
     .get() (err, res, body) ->
-      msg.send msg.send validLangs[msg.match[2]] + msg.random(translateComments) + body
+      msg.send validLangs[msg.match[2]] + msg.random(translateComments) + body
   
   # 一つ前の発言を翻訳する
   robot.hear /(.*)/i, (msg) ->
