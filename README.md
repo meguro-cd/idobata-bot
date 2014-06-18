@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/meguro-cd/idobata-bot.svg?branch=master)](https://travis-ci.org/meguro-cd/idobata-bot)
+[![Build Status](https://travis-ci.org/meguro-cd/idobata-chan.svg?branch=master)](https://travis-ci.org/meguro-cd/idobata-chan)
 
 ### Testing Hubot Locally
 
