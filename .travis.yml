@@ -1,15 +1,10 @@
 language: node_js
 node_js:
-  - "0.10"
-  
-notifications:
-  webhooks:
-    - https://idobata.io/hook/a86d131f-6aad-4c37-bb56-efdd67d0e3d9
-    
+- '0.10'
 deploy:
   provider: heroku
   api_key:
-    secure: FgSVdV0+dVnFpPLfe9XCuJZimk0sYJv6KPemQ0hS5GS1/kBbtSaq7hGl8B/1Hj/Epv/pOyJTJsrylc/1jr0PT0vzkYwZ5LL7s29lOnzQibIXcv74kodb2hEVNYqy1PK5ne7jn2seJQAjfEu+guW5kRoajTNU5LPj+51bXkmt9yA=
+    secure: DEFa4pgzc5JEXaE+9A5YhB8qzNwd3YMb4btXBe5uaZ+OfGM1RgSluvhSjaAQHr9dPsUGQe7FX1u56V4RvGAeveQrEMtwHfbPP+JhlASq6ufTtwTIUZopE6vzlxfbO2hXkrHu2deacxvtePvDO0OxLZMoWX/s8diB0TaloPia2JA=
   app: thawing-chamber-5618
   on:
-    repo: meguro-cd/idobata-bot
+    repo: meguro-cd/idobata-chan
