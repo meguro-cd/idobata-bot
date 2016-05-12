@@ -24,6 +24,7 @@
     "cron": "~1.0.4",
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-auth": "^1.2.0",
+    "hubot-cron": "^0.2.9",
     "hubot-hipchat": "~2.6.4-2",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "hubot-standup": "^0.1.8"
