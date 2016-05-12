@@ -1,1 +1,5 @@
-[]
+[
+  "hubot-auth",
+  "hubot-cron",
+  "hubot-standup"
+]
